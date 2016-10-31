@@ -1,0 +1,47 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 707,
+       "width": 1366,
+       "x": 0,
+       "y": 29
+    },
+    "name": "Inbox – arekkusu.rocha@gmail.com - Google Chrome",
+    "percent": 0.5,
+    "swallows": [
+       {
+       // "class": "^google\\-chrome$"
+        "instance": "^google\\-chrome$"
+       // "title": "^Inbox\\ \\–\\ arekkusu\\.rocha\\@gmail\\.com\\ \\-\\ Google\\ Chrome$",
+       // "transient_for": "^$",
+       // "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 546,
+       "width": 816,
+       "x": 0,
+       "y": 0
+    },
+    "name": "i3-save-tree --workspace 2",
+    "percent": 0.5,
+    "swallows": [
+       {
+       // "class": "^URxvt$"
+        "instance": "^urxvt$"
+       // "title": "^i3\\-save\\-tree\\ \\-\\-workspace\\ 2$",
+       // "transient_for": "^$"
+       }
+    ],
+    "type": "con"
+}
