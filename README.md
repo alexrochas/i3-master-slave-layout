@@ -1,4 +1,4 @@
-# i3-master-slave-layout
+# i3 Master Slave Layout
 > Layout master-slave like Xmonad for i3-wm
 
 I've don't achive the master-slave behavior yet.
