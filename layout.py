@@ -1,8 +1,24 @@
 import i3ipc
+from decorator import contextmanager
+
+
+@contextmanager
+def i3_connection(block):
+    i3 = i3ipc.Connection()
+    yield block(i3)
+
+
+def focus_window(id):
+    with i3_connection() as i3:
+        i3.command("[id='%s'] focus" % id)
+
 
 i3 = i3ipc.Connection()
-
-# i3.command("workspace 2: Web; append_layout /home/alex/Development/i3-master-slave-layout/example.layout")
-# i3.command("workspace 4: Job")
-# i3.command("layout default")
+output = i3.get_tree()
+workspace = i3.get_tree().find_focused().workspace()
+windows = workspace.nodes
+# to focus an window go for i3.command("[id='%s'] focus")
+if len(windows) > 1:
+    for window in windows:
+        focus_window(window.id)
 

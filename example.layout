@@ -4,44 +4,53 @@
     "current_border_width": 1,
     "floating": "auto_off",
     "geometry": {
-       "height": 707,
-       "width": 1366,
+       "height": 546,
+       "width": 816,
        "x": 0,
-       "y": 29
+       "y": 0
     },
-    "name": "Inbox – arekkusu.rocha@gmail.com - Google Chrome",
-    "percent": 0.5,
+    "name": "i3-save-tree",
+    "percent": 0.8,
     "swallows": [
        {
-       // "class": "^google\\-chrome$"
-        "instance": "^google\\-chrome$"
-       // "title": "^Inbox\\ \\–\\ arekkusu\\.rocha\\@gmail\\.com\\ \\-\\ Google\\ Chrome$",
-       // "transient_for": "^$",
-       // "window_role": "^browser$"
+       // "class": "^URxvt$",
+       "instance": "^urxvt$",
+       // "title": "^i3\\-save\\-tree$",
+       // "transient_for": "^$"
        }
     ],
     "type": "con"
 }
 
 {
+    // splitv split container with 1 children
     "border": "pixel",
-    "current_border_width": 1,
     "floating": "auto_off",
-    "geometry": {
-       "height": 546,
-       "width": 816,
-       "x": 0,
-       "y": 0
-    },
-    "name": "i3-save-tree --workspace 2",
-    "percent": 0.5,
-    "swallows": [
-       {
-       // "class": "^URxvt$"
-        "instance": "^urxvt$"
-       // "title": "^i3\\-save\\-tree\\ \\-\\-workspace\\ 2$",
-       // "transient_for": "^$"
-       }
-    ],
-    "type": "con"
+    "layout": "splitv",
+    "percent": 0.2,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 546,
+               "width": 816,
+               "x": 0,
+               "y": 0
+            },
+            "name": "alex@alex-kubuntu: ~",
+            "percent": 1,
+            "swallows": [
+               {
+               // "class": "^URxvt$",
+               "instance": "^urxvt$",
+               // "title": "^alex\\@alex\\-kubuntu\\:\\ \\~$",
+               // "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
 }
